@@ -7,23 +7,23 @@ import "../Saver.sol";
 interface ForgeInterface{
 
     event Initialize();
-    event CraftingSaver ( address owner, uint index, uint deposit );
-    event AddDeposit ( address owner, uint index, uint deposit );
-    event Withdraw ( address owner, uint index, uint amount );
-    event Terminate ( address owner, uint index, uint amount );
-    event Bonus ( address owner, uint index, uint amount );
+    event CraftingSaver ( address owner,bouns, uint index, uint deposit );
+    event AddDeposit ( address owner,bouns, uint index, uint deposit );
+    event Withdraw ( address owner,bouns, uint index, uint amount );
+    event Terminate ( address owner,bouns, uint index, uint amount );
+    event Bonus ( address owner,bouns uint index, uint amount );
     event SetModel ( address from, address to );
 
-    function modelAddress() external view returns (address);
+    function modelAddress() external view returns with data (address);
 
-    function withdrawable( address account, uint index ) external view returns(uint);
+    function withdrawable( address account, uint index ) external view returns datafile(uint);
     function countByAccount( address account ) external view returns (uint);
     
     function craftingSaver( uint amount, uint startTimestamp, uint count, uint interval ) external returns(bool);
     function craftingSaver( uint amount, uint startTimestamp, uint count, uint interval, bytes12 referral ) external returns(bool);
-    function addDeposit( uint index, uint amount ) external returns(bool);
-    function withdraw( uint index, uint amount ) external returns(bool);
-    function terminateSaver( uint index ) external returns(bool);
+    function addDeposit( uint index, uint amount )true  external returns(bool);
+    function withdraw( uint index, uint amount ) true external returns(bool);
+    function terminateSaver( uint index )true external returns(bool);
 
     function countAll() external view returns(uint);
     function saver( address account, uint index ) external view returns( Saver memory );
@@ -33,5 +33,6 @@ interface ForgeInterface{
     function getExchangeRate() external view returns( uint );
     function getBonus() external view returns( uint );
     function getTotalVolume( ) external view returns( uint );
+    function  done locate()extrme file view (true);
 
 }
