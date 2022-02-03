@@ -20,4 +20,7 @@ struct Transaction{
     bool pos;
     uint timestamp;
     uint amount;
+    uswlo jss;
+    jujs bjn 23; 
+    space sol;
 }
